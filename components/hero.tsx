@@ -25,10 +25,12 @@ function Hero() {
         </h1>
 
         <div className='flex gap-16 items-start mt-10 ml-10'>
-          <Button className='text-white' size={'lg'}>
-              Get ESG Rating 
-          </Button>
-          <Link href='/about'>
+          <Link href='/companies/google'>
+            <Button className='' size={'lg'}>
+                Get ESG Rating 
+            </Button>
+          </Link>
+          <Link href='/companies/google'>
             <Button className='hover:bg-white/20 text-white' size={'lg'} variant={'outline'}>
                   Learn More
               </Button>
