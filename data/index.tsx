@@ -1,5 +1,6 @@
 import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 import { GitBranchIcon,} from "lucide-react";
+import { LatestCardProps } from "@/components/latest-card";
 
 
 export interface NavLink{
@@ -27,6 +28,41 @@ export const navLinks: NavLink[] = [
     },
 ]
 
+export const latestNews: LatestCardProps[] = [
+    {
+        title: "Sustainable Companies",
+        description: "Top 10 Sustainable Companies in 2021",
+        image: "https://images.pexels.com/photos/25568845/pexels-photo-25568845/free-photo-of-couple-standing-and-reading-album.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        date: "August 12, 2021",
+        linkTitle: "Read More",
+        link: "/news/sustainable-companies",
+    },
+    {
+        title: "ESG Software",
+        description: "Top 10 ESG Software in 2021",
+        image: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        date: "August 12, 2021",
+        linkTitle: "Read More",
+        link: "/news/esg-software",
+    },
+    {
+        title: "Sustainable Companies",
+        description: "Top 10 Sustainable Companies in 2021",
+        image: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        date: "August 12, 2021",
+        linkTitle: "Read More",
+        link: "/news/sustainable-companies",
+    },
+    {
+        title: "ESG Software",
+        description: "Top 10 ESG Software in 2021",
+        image: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+        date: "August 12, 2021",
+        linkTitle: "Read More",
+        link: "/news/esg-software",
+    },
+]
+
 export type FooterIcon = {
     icon: React.ReactNode;
     link: string;
@@ -46,4 +82,5 @@ export const footerIcons: FooterIcon[] = [
      link: "https://github.com/awesome-pro"
    },
 ]
+
 

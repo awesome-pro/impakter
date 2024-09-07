@@ -1,8 +1,11 @@
 import React from 'react'
+import SearchBar from './search-bar'
 
 function Hero() {
   return (
-    <div>Hero</div>
+    <div>
+      <SearchBar />
+    </div>
   )
 }
 
