@@ -1,6 +1,7 @@
 import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 import { GitBranchIcon,} from "lucide-react";
 import { LatestCardProps } from "@/components/latest-card";
+import { CompanyCardProps } from "@/components/company-card";
 
 
 export interface NavLink{
@@ -62,6 +63,40 @@ export const latestNews: LatestCardProps[] = [
         link: "/news/esg-software",
     },
 ]
+
+export const companyCards: CompanyCardProps[] = [
+    {
+        companyName: "Apple",
+        companyESGScore: 80,
+        logoUrl: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+    },
+    {
+        companyName: "Microsoft",
+        companyESGScore: 70,
+        logoUrl: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+    },
+    {
+        companyName: "Google",
+        companyESGScore: 60,
+        logoUrl: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+    },
+    {
+        companyName: "Amazon",
+        companyESGScore: 50,
+        logoUrl: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+    },
+    {
+        companyName: "Facebook",
+        companyESGScore: 40,
+        logoUrl: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+    },
+    {
+        companyName: "Tesla",
+        companyESGScore: 30,
+        logoUrl: "https://images.pexels.com/photos/8633368/pexels-photo-8633368.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+    },
+]
+
 
 export type FooterIcon = {
     icon: React.ReactNode;

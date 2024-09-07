@@ -6,6 +6,7 @@ import FindESGbyCountry from "@/components/find-esg-by-country";
 import Hero from "@/components/hero";
 import HowESGCaculated from "@/components/how-esg-calculated";
 import LatestNews from "@/components/latest-news";
+import WhyImportant from "@/components/why-important";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <FindESGbyCountry />
       <Compare />
       <Certificate />
+      <WhyImportant />
       <HowESGCaculated />
       <LatestNews />
       <FAQ />

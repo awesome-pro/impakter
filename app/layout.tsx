@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+
+const dmSans = DM_Sans({
+  weight: ["400", "500", "700"], // Choose the weights you need
+  style: ["normal", "italic"],   // Choose styles if needed
+  subsets: ["latin"],            // Subsets for supported languages
+  variable: "--font-dm-sans",     // Custom variable for the font
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
