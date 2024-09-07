@@ -14,7 +14,7 @@ import { Button } from "./ui/button"
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="sticky top-0 px-1 bg-transparent z-50">
+    <NavigationMenu className="sticky top-0 px-1 bg-white/50 z-50 bg-opacity-30 backdrop-blur-lg">
       <span>
         <Link className="text-3xl font-bold text-primary hover:bg-yellow-50" href={'/'}>
           <Image src="/logo.png" width={200} height={40} alt="logo" className="hover:z-20"/>
@@ -23,13 +23,13 @@ export default function Navbar() {
       <span className="flex gap-3 py-2 px-1 text-xs ">
         {navLinks.map((link) => (
             <Link href={link.href} key={link.href}>
-              <Button variant="ghost" size={'sm'}>
+              <Button variant="ghost">
                 {link.title}
               </Button>
             </Link>
         ))}
          <Link href="/sign-in">
-          <Button size="sm"> 
+          <Button className="text-white"> 
             Free ESG Score
           </Button>
         </Link>

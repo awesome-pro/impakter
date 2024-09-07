@@ -1,28 +1,54 @@
+"use client";
+
 import React from 'react'
-import SearchBar from './search-bar'
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import { Button } from './ui/button';
+import Link from 'next/link';
 
 function Hero() {
+
+
   return (
-    <section className="bg-cover bg-center w-screen lg:min-h-[660px] -mt-20 flex flex-col items-center justify-center " >
-      
-      <h1 className='text-6xl text-white font-bold'>
-        ESG Rating 
-        <span className='text-primary/80'>Sustainability Report</span>
-      </h1>
-      <div className='flex items-center justify-center w-full gap-20'>
-        <Button size='lg' className='border-none rounded-l-none rounded-full text-white'>
-           Check ESG Index
-        </Button>
-        <Button size='lg' className='border-none rounded-l-none rounded-full' variant={'outline'}>
-           Get Certified
-        </Button>
-      </div>
+    <section className='w-full relative min-h-[650px] bg-cover bg-center flex flex-col items-start' style={{ backgroundImage: "url(/hero-5.jpg)"}}>
+        <h1 className='text-white text-[60px] font-bold mt-20 ml-10'>
+          ESG Rating <br />
+          <span className=''>Sustainability Report & </span>
+          <br />
+          ISO Certificate
+          
+        </h1>
+
+        <div className='flex gap-16 items-start mt-10 ml-10'>
+          <Button className='text-white' size={'lg'}>
+              Get ESG Rating 
+          </Button>
+          <Link href='/about'>
+            <Button className='hover:bg-white/20 text-white' size={'lg'} variant={'outline'}>
+                  Learn More
+              </Button>
+          </Link>
+            
+        </div>
     </section>
   )
 }
 
 export default Hero
+
+const heroCarousel = [
+  {
+    image: "/hero-1.png",
+  },
+  {
+    image: "/hero-2.png",
+  },
+  {
+    image: "/hero-3.png",
+  },
+]

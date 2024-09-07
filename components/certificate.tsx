@@ -3,6 +3,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function Certificate() {
 
@@ -10,43 +14,39 @@ function Certificate() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
 
+
   return (
-   <section className=''>
-      <h1 className='text-2xl font-semibold ml-5 mb-5'>
-        See if your company has a popular ESG Certificate
-      </h1>
-      <div className='grid lg:grid-cols-3 gap-x-5 gap-y-10 items-center justify-between'>
+    <section className='w-full relative'>
+    <h1 className='text-2xl font-semibold ml-5 mb-5'>
+      See if your company has a popular ESG Certificate
+    </h1>
+  
+    {/* Wrapper around the slider */}
+    <div className="relative">
+      {/* Left blurry shadow */}
+      <div className="absolute top-0 left-0 h-full w-[500px] bg-gradient-to-r from-white/90 to-transparent z-10 pointer-events-none"></div>
+      
+      {/* Right blurry shadow */}
+      <div className="absolute top-0 right-0 h-full w-[500px] bg-gradient-to-l from-white/90 to-transparent z-10 pointer-events-none"></div>
+  
+      {/* Slider */}
+      <Slider {...settings} centerMode={true}>
         {certificates.map((certificate, index) => (
-          <Link key={index} className='card' href={certificate.link}>
-            <div className='flex flex-col items-start justify-center rounded-lg bg-green-200 p-5'>
-              <Image src={certificate.image} alt={certificate.title} width={200} height={0} className='w-full overflow-clip'/>
-              <h2 className='text-sm'>{certificate.title}</h2>
-            </div>
-              
+          <Link key={index} href={certificate.link} className='flex flex-col items-center justify-center m-5'>
+            <Image src={certificate.image} alt={certificate.title} width={300} height={200}/>
+            <h2 className='text-sm'>{certificate.title}</h2>
           </Link>
         ))}
-      </div>
-   </section>
+      </Slider>
+    </div>
+  </section>
+  
   )
 }
 

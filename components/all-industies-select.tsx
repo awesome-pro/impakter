@@ -15,7 +15,7 @@ import {
 export default function AllIndustrySelect() {
   return (
     <Select>
-      <SelectTrigger className="w-[180px] rounded-none h-[50px]">
+      <SelectTrigger className="w-[180px] rounded-none h-[50px] border-blue-600">
         <SelectValue placeholder="Industry" />
       </SelectTrigger>
       <SelectContent>
