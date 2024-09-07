@@ -26,7 +26,7 @@ export default WhyImportant
 const whyCardLists: WhyCardProps[] = [
     {
         title: "For Consumers",
-        image: "/images/for-consumers.jpg",
+        image: "/consumers.png",
         description: "For consumers, ESG indexes are a great way to identify companies that align with their values.",
         points: [
             "Find companies that are environmentally friendly",
@@ -37,7 +37,7 @@ const whyCardLists: WhyCardProps[] = [
     },
     {
         title: "For Businesses",
-        image: "/images/for-businesses.jpg",
+        image: "/businesses.png",
         description: "For businesses, ESG indexes can help identify areas where they can improve their sustainability performance.",
         points: [
             "Identify areas where they can reduce their environmental impact",

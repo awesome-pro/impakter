@@ -16,9 +16,8 @@ function WhyCard(
 ) {
   return (
     <Card className='flex flex-col items-center gap-2 max-w-[450px]'>
-        <CardHeader className='text-start'>
+        <CardHeader className='cursor-pointer overflow-hidden bg-cover object-cover hover:z-20 hover:shadow-lg text-primary w-full h-[250px]' style={{ backgroundImage: `url(${image})`}}>
             <h1 className='text-2xl text-primary font-semibold'>{title}</h1>
-            <Image src={image} width={200} height={100} alt={title} />
         </CardHeader>
         <CardContent className='text-sm'>
             <h2>{description}</h2>

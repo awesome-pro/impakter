@@ -6,6 +6,7 @@ import { Button } from './ui/button'
 import CountrySelect from './country-select';
 import AllIndustrySelect from './all-industies-select';
 import RatingSelect from './rating-select';
+import CountryCombo from './country-select-2';
 
 
 function SearchBar() {
@@ -14,12 +15,12 @@ function SearchBar() {
       <Input
         type='text'
         placeholder='Search for companies...'
-        className='rounded-r-none w-1/2'
+        className='rounded-r-none w-1/2 h-[50px] text-lg'
       />
      <CountrySelect />
      <AllIndustrySelect />
      <RatingSelect />
-      <Button size='lg' className=' border-none'>
+      <Button size='lg' className=' border-none rounded-l-none h-[50px] text-white font-black text-xl '>
         Search
       </Button>
     </div>

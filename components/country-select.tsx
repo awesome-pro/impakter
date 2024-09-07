@@ -15,7 +15,7 @@ import {
 export default function CountrySelect() {
   return (
     <Select >
-      <SelectTrigger className="w-[180px] rounded-none">
+      <SelectTrigger className="w-[180px] rounded-none h-[50px]">
         <SelectValue placeholder="Country"/>
       </SelectTrigger>
       <SelectContent>

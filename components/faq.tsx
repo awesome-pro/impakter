@@ -12,7 +12,7 @@ import {
             FAQs on ESG, Sustainability & CSRD
         </h1>
          <Accordion type="single" collapsible className="p-10 lg:w-2/3">
-            <AccordionItem value="item-1">
+            <AccordionItem value="item-1" className="px-5">
             <AccordionTrigger>What is ESG rating?</AccordionTrigger>
             <AccordionContent>
                 ESG rating is a score given to a company based on its performance in three key areas: Environmental, Social, and Governance. It evaluates how well a company manages its environmental impact, social responsibilities, and corporate governance practices.

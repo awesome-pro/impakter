@@ -15,7 +15,7 @@ import {
 export default function RatingSelect() {
   return (
     <Select>
-      <SelectTrigger className="w-[180px] rounded-none">
+      <SelectTrigger className="w-[180px] h-[50px] rounded-none">
         <SelectValue placeholder="Rating" />
       </SelectTrigger>
       <SelectContent>
