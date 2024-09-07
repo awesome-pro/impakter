@@ -8,7 +8,7 @@ import React from 'react'
 function Page({params }: {params: {id: string}}) {
   return (
     <section>
-        <CompanyHero />
+        <CompanyHero name={params.id}/>
         <div className='flex justify-center gap-5 bg-white px-8 py-10'>
             <div className='w-[400px] bg-slate-100 px-2 pl-4 pt-5 mb-2 ml-23'>
                 <h1 className='text-md font-semibold'>
