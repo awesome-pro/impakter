@@ -2,7 +2,9 @@ import React from 'react'
 
 function Companies() {
   return (
-    <div>companies</div>
+    <section className='bg-transparent min-h-[100px]'>
+
+    </section>
   )
 }
 

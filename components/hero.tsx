@@ -10,12 +10,13 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Button } from './ui/button';
 import Link from 'next/link';
+import Companies from './companies';
 
 function Hero() {
 
 
   return (
-    <section className='w-full relative min-h-[650px] bg-cover bg-center flex flex-col items-start' style={{ backgroundImage: "url(/hero-5.jpg)"}}>
+    <section className='w-full relative min-h-[750px] bg-cover bg-center flex flex-col items-start' style={{ backgroundImage: "url(/hero-5.jpg)"}}>
         <h1 className='text-white text-[60px] font-bold mt-20 ml-10'>
           ESG Rating <br />
           <span className=''>Sustainability Report & </span>
@@ -34,9 +35,10 @@ function Hero() {
             <Button className='hover:bg-white/20 text-white' size={'lg'} variant={'outline'}>
                   Learn More
               </Button>
-          </Link>
-            
+          </Link>     
         </div>
+
+        <Companies />
     </section>
   )
 }

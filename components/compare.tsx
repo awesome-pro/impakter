@@ -2,7 +2,7 @@ import React from 'react'
 
 function Compare() {
   return (
-    <section>
+    <section className=''>
         <h1>Compare</h1>
     </section>
   )
