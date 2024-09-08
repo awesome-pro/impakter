@@ -16,9 +16,8 @@ export default function Home() {
    <main className="min-h-screen flex flex-col items-center justify-center bg-slate-50">
       <Hero />
       <Companies />
-      <FindESGbyCountry />
-      <Find />
       
+      <Find />
       <Certificate />
       <WhyImportant />
       <HowESGCaculated />
