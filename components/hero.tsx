@@ -38,37 +38,7 @@ function Hero() {
                     </Button>
                 </Link>    
             </div>
-
-            <div className='-mb-56'>
-              <FindESGbyCountry />
-            </div>
         </div>
-
-
-        
-        {/* <h1 className='text-white text-[70px] font-bold mt-20 ml-10'>
-          ESG Rating <br />
-          <span className=''>Sustainability Report & </span>
-          <br />
-          ISO Certificates
-        </h1>
-
-        <div className='flex gap-16 items-start mt-10 ml-10'>
-          <Link href='/companies/google'>
-            <Button className='' size={'lg'}>
-                Get ESG Rating 
-            </Button>
-          </Link>
-          <Link href='/companies/google'>
-            <Button className='hover:bg-white/20 text-white' size={'lg'} variant={'outline'}>
-                  Learn More
-              </Button>
-          </Link>     
-        </div> */}
-
-        {/* <div className="mt-24">
-          <FindESGbyCountry />
-        </div> */}
     </section>
   )
 }
