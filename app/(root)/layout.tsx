@@ -11,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-gray-100">
+      <body className="bg-gray-100 max-w-screen-2xl">
         <Navbar />
         {children}
         <LookingForESG />
