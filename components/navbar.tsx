@@ -11,10 +11,21 @@ import {
 import Image from "next/image"
 import { navLinks } from "@/data"
 import { Button } from "./ui/button"
+import { useScrollPosition } from "@/hooks/use-scroll-positions"
 
 export default function Navbar() {
+
+  function classNames(...classes: string[]): string {
+    return classes.filter(Boolean).join(' ')
+  }
+
+  const scrollPosition  = useScrollPosition();
+
   return (
-    <NavigationMenu className="sticky top-0 px-1 bg-white/50 z-50 bg-opacity-30 backdrop-blur-lg">
+    <NavigationMenu className={cn(
+      "fixed top-0 left-0 right-0 z-50 bg-white/70 shadow-md transition-transform duration-300 transform",
+      scrollPosition > 0 ? "backdrop-blur-sm" : "bg-transparent"
+    )}>
       <span>
         <Link className="text-3xl font-bold text-primary hover:bg-yellow-50" href={'/'}>
           <Image src="/logo.png" width={200} height={40} alt="logo" className="hover:z-20"/>
