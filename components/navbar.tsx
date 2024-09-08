@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <NavigationMenu className={cn(
       "fixed top-0 left-0 right-0 z-50 bg-white/70 shadow-md transition-transform duration-300 transform",
-      scrollPosition > 0 ? "backdrop-blur-sm" : "bg-transparent"
+      scrollPosition > 0 ? "backdrop-blur-sm" : "bg-transparent text-white"
     )}>
       <span>
         <Link className="text-3xl font-bold text-primary hover:bg-yellow-50" href={'/'}>

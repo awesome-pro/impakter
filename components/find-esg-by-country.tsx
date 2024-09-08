@@ -4,7 +4,7 @@ import SearchBar from './search-bar'
 
 function FindESGbyCountry() {
   return (
-    <div className='w-screen min-h-[240px] bg-gradient-to-b from-primary/5 to-primary/50 flex flex-col items-center justify-center '>
+    <div className='w-screen min-h-[240px] flex flex-col items-center justify-center '>
       <h1 className='text-2xl font-bold mb-8 text-white'>
         Find ESG Scores by Country, Industry, or Rating
       </h1>
