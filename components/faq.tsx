@@ -8,7 +8,7 @@ import {
   export function FAQ() {
     return (
      <section className="flex flex-col items-center justify-center w-screen">
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-2xl font-semibold mt-10">
             FAQs on ESG, Sustainability & CSRD
         </h1>
          <Accordion type="single" collapsible className="p-10 lg:w-2/3">

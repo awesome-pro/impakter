@@ -11,7 +11,7 @@ import CountryCombo from './country-select-2';
 
 function SearchBar() {
   return (
-    <div className='flex items-center justify-between gap-0 z-30 hover:z-50 shadow-lg bg-white/90 shadow-primary/50 hover:shadow-primary/70  rounded-sm'>
+    <div className='flex items-center justify-between gap-0 z-30 hover:z-50 shadow-lg bg-white/90 shadow-primary/50 hover:shadow-primary/70  rounded-md'>
       <Input
         type='text'
         placeholder='Search for companies...'
