@@ -18,7 +18,7 @@ function Hero() {
 
   return (
     <section className='w-full relative min-h-[730px] bg-cover bg-center flex flex-col items-start -mt-[40px]' style={{ backgroundImage: "url(/images/signup.jpg)"}}>
-        <h1 className='text-white text-[70px] font-bold mt-20 ml-10 bg-gradient-to-r from-black/30 to-transparent'>
+        <h1 className='text-white text-[70px] font-bold mt-20 ml-10'>
           ESG Rating <br />
           <span className=''>Sustainability Report & </span>
           <br />
