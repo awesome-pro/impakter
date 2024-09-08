@@ -34,7 +34,10 @@ export default function Navbar() {
       <span className="flex gap-3 py-2 px-1 text-xs ">
         {navLinks.map((link) => (
             <Link href={link.href} key={link.href}>
-              <Button variant="ghost">
+              <Button variant="ghost" className={cn(
+                "",
+                scrollPosition <= 0 ? "hover:bg-white/20 text-white" : "hover:bg-white/40 text-black hover:text-black"
+              )}>
                 {link.title}
               </Button>
             </Link>
