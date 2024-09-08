@@ -1,5 +1,6 @@
 import { CarouselPlugin } from "@/components/carousel";
 import Certificate from "@/components/certificate";
+import Companies from "@/components/companies";
 import Compare from "@/components/compare";
 import { FAQ } from "@/components/faq";
 import Find from "@/components/find";
@@ -14,15 +15,15 @@ export default function Home() {
   return (
    <main className="min-h-screen flex flex-col items-center justify-center bg-slate-50">
       <Hero />
+      <Companies />
       <FindESGbyCountry />
       <Find />
-      <Compare /> 
+      
       <Certificate />
       <WhyImportant />
       <HowESGCaculated />
       <LatestNews />
       <FAQ />
-      <CarouselPlugin />
    </main>
   );
 }

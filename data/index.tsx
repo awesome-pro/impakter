@@ -20,8 +20,8 @@ export const navLinks: NavLink[] = [
         href: "/esg-software",
     },
     {
-        title: "About Us",
-        href: "/about",
+        title: "Resources",
+        href: "/resources",
     },
     {
         title: "About Us",
