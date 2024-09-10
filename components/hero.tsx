@@ -20,7 +20,7 @@ function Hero() {
     <section className='w-full min-h-[760px] bg-cover bg-center backdrop-blur-xl' style={{ backgroundImage: "url(/images/signup.jpg)"}}>
 
         <div className='min-w-screen h-full min-h-[760px] bg-black/40 flex flex-col items-center justify-center z-20 text-cente'>
-            <h1 className='text-white text-[70px] font-bold mt-20'>
+            <h1 className='text-white text-[70px] font-bold mt-20 text-center'>
               ESG Rating Sustainability Report &
               <br />
               ISO Certificates
