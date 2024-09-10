@@ -14,9 +14,7 @@ import WhyImportant from "@/components/why-important";
 export default function Home() {
   return (
    <main className="min-h-screen flex flex-col items-center justify-center bg-slate-50">
-      <Hero />
-      <Companies />
-      
+      <Hero /> 
       <Find />
       <Certificate />
       <WhyImportant />

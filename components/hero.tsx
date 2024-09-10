@@ -17,9 +17,8 @@ function Hero() {
 
 
   return (
-    <section className='w-full min-h-[760px] bg-cover bg-center backdrop-blur-xl' style={{ backgroundImage: "url(/images/signup.jpg)"}}>
-
-        <div className='min-w-screen h-full min-h-[760px] bg-black/40 flex flex-col items-center justify-center z-20 text-cente'>
+    <section className='relative w-full h-screen bg-cover bg-center backdrop-blur-xl' style={{ backgroundImage: "url(/images/signup.jpg)"}}>
+        <div className='relative min-w-screen h-screen  bg-black/40 flex flex-col items-center justify-center z-20 text-center'>
             <h1 className='text-white text-[70px] font-bold mt-20 text-center'>
               ESG Rating Sustainability Report &
               <br />
@@ -38,6 +37,7 @@ function Hero() {
                     </Button>
                 </Link>    
             </div>
+            <Companies className='absolute bottom-0'/>
         </div>
     </section>
   )
