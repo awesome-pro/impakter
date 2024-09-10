@@ -12,7 +12,7 @@ function Companies({className}: {className?: string}) {
         <div className='flex gap-16 items-baseline justify-evenly'>
             {companies.map((company) => (
               <Link href={company.website} target='_blank'>
-               <Image src={company.logo} width={60} height={30} alt="logo" className="hover:z-20"/>
+               <Image src={company.logo} width={70} height={60} alt="logo" className="hover:z-20"/>
               </Link>
             ))}
         </div>
