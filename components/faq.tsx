@@ -4,13 +4,12 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+import Heading from "./heading"
   
   export function FAQ() {
     return (
      <section className="flex flex-col items-center justify-center w-screen">
-        <h1 className="text-2xl font-semibold mt-10">
-            FAQs on ESG, Sustainability & CSRD
-        </h1>
+        <Heading title='FAQs on ESG, Sustainability & CSRD'/>
          <Accordion type="single" collapsible className="p-10 lg:w-2/3">
             <AccordionItem value="item-1">
             <AccordionTrigger>What is ESG rating?</AccordionTrigger>

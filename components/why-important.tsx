@@ -1,10 +1,11 @@
 import React from 'react'
 import WhyCard, { WhyCardProps } from './why-card'
+import Heading from './heading'
 
 function WhyImportant() {
   return (
-    <section className='text-center flex flex-col items-center gap-2 py-20 bg-white z-5 shadow-sm'>
-        <h1 className='text-2xl font-semibold'>Why is ESG Index important?</h1>
+    <section className='text-center flex flex-col items-center gap-2 py-20 bg-white z-5 shadow-sm w-screen'>
+        <Heading title='Why is ESG Index important?'/>
         <p className='max-w-[940px]'>
             ESG indexes are crucial because they provide a standardized way to measure and track 
             the sustainability performance of companies, and thus help all stakeholders identify 

@@ -6,6 +6,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Heading from './heading';
 
 
 function Certificate() {
@@ -23,10 +24,7 @@ function Certificate() {
 
   return (
     <section className='w-full relative'>
-    <h1 className='text-2xl font-semibold ml-5 mb-5'>
-      See if your company has a popular ESG Certificate
-    </h1>
-  
+    <Heading title='See if your company has a popular ESG Certificate?'/>
     {/* Wrapper around the slider */}
     <div className="relative">
       {/* Left blurry shadow */}

@@ -1,10 +1,11 @@
 import React from 'react'
 import { Button } from './ui/button'
+import Heading from './heading'
 
 function Find() {
   return (
     <section className='flex flex-col items-center justify-center my-20'>
-        <h1 className='text-2xl font-semibold mb-2'>How to find the ESG score of a company?</h1>
+        <Heading title='How to find ESG Score?'/>
         <h3>
          Use the Free ESG Score search widget of IMPAKTER INDEX
         </h3>

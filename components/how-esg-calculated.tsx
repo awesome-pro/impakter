@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import SearchBar from './search-bar'
+import Heading from './heading'
 
 function HowESGCaculated() {
   return (
-    <section className='text-center flex flex-col items-center gap-2 py-20'>
-        <h1 className='text-2xl font-semibold'>How ESG is calculated ?</h1>
+    <section className='text-start flex flex-col items-center gap-2 py-20'>
+        <Heading title='How ESG is calculated ?'/>
         <h6 className='max-w-[800px]'>
             ESG scores are typically calculated using a combination of quantitative and qualitative data. 
             Quantitative data might include factors like greenhouse gas emissions, water usage, 

@@ -4,10 +4,10 @@ import React from 'react'
 
 function Companies({className}: {className?: string}) {
   return (
-    <section className='absolute bottom-0 bg-transparent flex text-center items-center justify-start gap-20 pl-10 w-screen  bg-gradient-to-b from-primary/5 to-primary/70'>
+    <section className='absolute bottom-0 bg-transparent flex text-center items-center justify-start gap-20 pl-10 w-screen  bg-gradient-to-b from-primary/5 to-primary/70 -mt-20'>
       <span>
         <h2 className='text-3xl font-bold text-white'>Trusted by</h2>
-        <h3 className='text-white font-serif'>World's Best Companies</h3>
+        <h3 className='text-white font-serif'>World's Best Leaders</h3>
       </span>
         <div className='flex gap-16 items-baseline justify-evenly'>
             {companies.map((company) => (

@@ -6,6 +6,7 @@ import LatestCard from './latest-card'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Heading from './heading';
 
 
 
@@ -25,7 +26,7 @@ function LatestNews() {
 
   return (
     <div className='bg-white p-10'>
-        <h1 className='text-2xl font-bold my-1 ml-5'>Latest in the world of ESG</h1>
+        <Heading title='Latest in the world of ESG'/>
         <div className='flex items-center justify-around gap-2 p-4'>
             {latestNews.map((news) => (
                 <LatestCard key={news.title} {...news} />

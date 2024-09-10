@@ -12,6 +12,7 @@ import { Button } from './ui/button';
 import Link from 'next/link';
 import Companies from './companies';
 import FindESGbyCountry from './find-esg-by-country';
+import { DoubleArrowDownIcon } from '@radix-ui/react-icons';
 
 function Hero() {
 
@@ -37,6 +38,8 @@ function Hero() {
                     </Button>
                 </Link>    
             </div>
+
+            <DoubleArrowDownIcon className='absolute bottom-20 animate-bounce text-white text-6xl font-bold'/>
             <Companies className='absolute bottom-0'/>
         </div>
     </section>

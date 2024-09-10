@@ -52,7 +52,7 @@ function Footer() {
 
       <div className='flex items-center justify-between p-2 text-center w-screen'>
         <p className='text-sm'>
-          © 2021 Optieva. All rights reserved.
+          © 2024 Impakter. All rights reserved.
         </p>
       </div>
     </footer>
